@@ -1,12 +1,12 @@
 import React from 'react'
 
-const Student = ({company,firstName,email, lastName, pic, skill, grades}) => {
+const Student = ({student}) => {
   return(
   <article className='single-student'>
-    <h4>{firstName}</h4>
-    <p>{email}</p>
-    <p>{skill}</p>
-    <p>{company}</p>
+    <h4>{student.firstName}</h4>
+    <p>{student.email}</p>
+    <p>{student.skill}</p>
+    <p>{student.company}</p>
 
   </article>
   );

@@ -11,7 +11,7 @@ const App = () => {
 			.then(
 				(res) => {
 					setIsLoaded(true);
-					setStudents(res);
+					setStudents(res.students);
 				},
 				(error) => {
 					setIsLoaded(true);

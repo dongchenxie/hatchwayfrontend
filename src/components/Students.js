@@ -1,7 +1,6 @@
 import React from 'react'
 import Student from './Student'
-const Students = ({students}) => {
- 
+const Students = (props) => {
   return (
     <section>
       <p>Students</p>
@@ -10,7 +9,7 @@ const Students = ({students}) => {
 
  
         {
-          students.map((student) => {
+          props.students.map((student) => {
             return <Student student = {student}></Student>
           })}
         
